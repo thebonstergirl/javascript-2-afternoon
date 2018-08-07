@@ -16,8 +16,11 @@
 
 //Code here
 
-
-
+var me = {
+  name: "Jordan",
+  age: 26
+}
+//alert(me.name);
 ////////// PROBLEM 2 //////////
 
 /*
@@ -27,7 +30,14 @@
 
 //Code here
 
-
+var favoriteThings = {
+  band: "Of Montreal",
+  food: "bastilla",
+  person: "Dalton",
+  book: "Do Androids Dream of Electric Sheep",
+  movie: "About Time",
+  holiday: "Valentine's Day"
+}
 
 /*
   After you've made your object, add another key named 'car' with the value being your favorite car and then another key named 'brand' with the value being your favorite brand.
@@ -35,6 +45,8 @@
 
 //Code here
 
+favoriteThings.car = "Honda Element"
+favoriteThings.brand = "Bugmane"
 
 
 /*
@@ -43,7 +55,8 @@
 
 //Code here
 
-
+favoriteThings.food = "Chicken Nuggets"
+favoriteThings.book = "Harry Potter"
 
 ////////// PROBLEM 3 //////////
 
@@ -57,15 +70,18 @@
 
 //Code here
 
-
-
+var backPack = {};
+var item = "firstPocket";
+backPack[item];
+backPack["firstPocket"] = "chapstick";
+backPack.color = "green";
 /*
   After you do the above, alert your entire backPack object.
 */
 
 //Code here
 
-
+//alert(backPack)
 
 /*
 You probably noticed that it just alerted [object Object].
@@ -75,7 +91,7 @@ Instead, console.log your whole backPack object and then check out the console.
 
 //Code here
 
-
+console.log(backPack);
 
 ////////// PROBLEM 4 //////////
 
@@ -98,7 +114,8 @@ var user2 = {
 
 //Code Here
 
-
+user2.name = 'Tyler S. McGinnis';
+user2.email = 'tyler.mcginnis@devmounta.in';
 
 
 
