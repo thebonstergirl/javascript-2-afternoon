@@ -138,7 +138,7 @@ user2.email = 'tyler.mcginnis@devmounta.in';
 
 //Code Here
 
-
+var methodCollection = {};
 
 /*
   Now add two methods (functions that are properties on objects) to your methodCollection object. 
@@ -147,7 +147,8 @@ user2.email = 'tyler.mcginnis@devmounta.in';
 
 //Code Here
 
-
+methodCollection.alertHello = () => alert("hello");
+methodCollection.logHello = () => console.log("hello");
 
 /*
   Now call your alertHello and logHello methods.
@@ -155,6 +156,8 @@ user2.email = 'tyler.mcginnis@devmounta.in';
 
 //Code Here
 
+methodCollection.alertHello;
+methodCollection.logHello;
 
 
 ////////// PROBLEM 6 //////////
@@ -166,7 +169,13 @@ user2.email = 'tyler.mcginnis@devmounta.in';
 
 //Code Here
 
-
+var makePerson = (name, birthday, ssn) => {
+  var person = {};
+  person.name = name;
+  person.birthday = birthday;
+  person.ssn = ssn;
+  return person;
+}
 
 ////////// PROBLEM 7 //////////
 
@@ -177,4 +186,11 @@ user2.email = 'tyler.mcginnis@devmounta.in';
 
 //Code Here
 
+var makeCard = (cardNumber, expirationDate, securityCode) => {
+  var creditCard = {};
+  creditCard.cardNumber = cardNumber;
+  creditCard.expirationDate = expirationDate;
+  creditCard.securityCode = securityCode;
+  return creditCard;
+}
 
